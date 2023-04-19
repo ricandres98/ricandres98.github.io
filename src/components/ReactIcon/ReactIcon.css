@@ -1,0 +1,12 @@
+.ReactIcon {
+    animation: background-rotation 5s infinite linear;
+}
+
+@keyframes background-rotation {
+    0% {
+        transform: translate(50%, 0) rotate(0);
+    }
+    100% {
+        transform: translate(50%, 0) rotate(360deg);
+    }
+}
