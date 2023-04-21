@@ -30,3 +30,11 @@
         font-size: var(--xx-large);
     } 
 }
+@media screen and (min-width:900px) {
+    .ProjectsList .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 290px);
+        gap: 50px;
+        justify-content: center;
+    }
+}

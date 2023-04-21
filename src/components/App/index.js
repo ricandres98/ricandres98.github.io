@@ -3,9 +3,10 @@ import { StaticBackground } from "../StaticBackground";
 import { Introduction } from "../Introduction";
 import { ProjectsList } from "../ProjectsList";
 import { ContactInfo } from "../ContactInfo";
-import { projects } from "../../../scripts/data";
+import { contacts, projects } from "../../services/data";
 import { ProjectCard } from "../ProjectCard";
 import "./App.css";
+import { ContactCard } from "../ContactCard";
 
 const App = () => {
   return (
@@ -14,10 +15,26 @@ const App = () => {
       <Introduction />
       <ProjectsList>
         {projects.map((project) => (
-          <ProjectCard key={project.title} />
+          <ProjectCard 
+            key={project.title} 
+            description={project.description}
+            title={project.title}
+            imageSrc={project.imageSrc}
+            projectSrc={project.projectSrc}
+          />
         ))}
       </ProjectsList>
-      <ContactInfo />
+      <ContactInfo 
+        contacts={contacts}
+        render={(contact)=> (
+          <ContactCard 
+            username={contact.username}
+            url={contact.url}
+            img={contact.img}
+            socialMedia={contact.socialMedia}
+          />
+        )}
+      />
     </>
   );
 };

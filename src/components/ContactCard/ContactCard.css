@@ -1,0 +1,23 @@
+.ContactCard svg {
+    width: 32px;
+    margin-right: 20px;
+}
+a.ContactCard  {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--small);
+    color: var(--white);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    a.ContactCard {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: var(--medium);
+        color: var(--white);
+        font-weight: 600;
+    }
+}

@@ -3,9 +3,9 @@ import './ProjectsList.css';
 
 const ProjectsList = ({children}) => {
   return (
-    <section class="ProjectsList">
+    <section className="ProjectsList">
       <h2>Projects</h2>
-      <div class="cards-container">
+      <div className="cards-container">
         {children}
       </div>
     </section>
