@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --config webpack.config.dev.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ricandres98/ricandres98.github.io/issues"
   },
-  "homepage": "https://github.com/ricandres98/ricandres98.github.io#readme",
+  "homepage": "https://ricandres98.github.io",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/plugin-transform-runtime": "^7.21.4",
@@ -39,6 +41,7 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "url-loader": "^4.1.1"
