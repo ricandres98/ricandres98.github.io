@@ -1,9 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin }= require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -39,17 +36,6 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
-                use: {
-                    loader: 'url-loader',
-	                options: {
-                        limit: 10000,
-                        mimetype: "application/font-woff",
-                        name: "[name].[ext]",
-                        outputPath: './assets/fonts/',
-                        publicPath: './assets/fonts/',
-                        esModule: false,
-                    }
-                }
             },
             {
                 test: /\.(jpg|png|svg)$/,
@@ -63,15 +49,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin(),
-        new CleanWebpackPlugin(),
     ],
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new CssMinimizerPlugin(),
-            new TerserPlugin()
-        ]
-    },
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist')
