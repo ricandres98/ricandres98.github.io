@@ -5,85 +5,63 @@ import dataAnalysisImg from '../assets/images/data-analysis.jpg';
 import musicDiscovererImg from  '../assets/images/music-discoverer.jpg';
 import platziMoviesImg from '../assets/images/platzi-movies.jpg';
 import calculatorImg from '../assets/images/calculator.jpg';
+import musicDiscovererNextImg from '../assets/images/music-next.jpg';
+import pandaCssImg from '../assets/images/panda-css.jpg';
 import { TwitterLogo } from '../assets/icons/TwitterLogo';
 import { PlatziLogo } from '../assets/icons/PlatziLogo';
 import { GithubLogo } from '../assets/icons/GithubLogo';
 import { GmailLogo } from '../assets/icons/GmailLogo';
 
-class Project {
-    constructor({
-        title,
-        description,
-        imageSrc,
-        projectSrc
-    }) {
-        this._title = title;
-        this._description = description;
-        this._imageSrc = imageSrc;
-        this._projectSrc = projectSrc;
-    }
-
-    get title() {
-        return this._title;
-    }
-
-    get description() {
-        return this._description;
-    }
-    
-    get imageSrc() {
-        return this._imageSrc;
-    }
-    
-    get projectSrc() {
-        return this._projectSrc;
-    }
-}
-
 const projects = [
-    new Project({
+    {
         title: 'The Music Discoverer Next.js',
         description: `This is a Next.js application that uses a Spotify-like API to browse through its data and play track previews.
         This project is a migration from a SPA built in with simple JS`,
-        imageSrc: musicDiscovererImg,
+        imageSrc: musicDiscovererNextImg,
         projectSrc: 'https://animated-squirrel-5f3b15.netlify.app/'
-    }),
-    new Project({
+    },
+    {
         title: 'Rick and Morty DataBase',
         description: 'A website built to explore different endpoints of an API with vanilla JS',
         imageSrc: rickAndMortyImg,
         projectSrc: 'https://ricandres98.github.io/rick-and-morty/src/html/'
-    }),
-    new Project({
+    },
+    {
         title: 'Passed days',
         description: 'An app that calculates the difference in dayss between two given dates',
         imageSrc: passedDaysImg,
         projectSrc: 'https://ricandres98.github.io/Passed-days-claymorphism/'
-    }),
-    new Project({
+    },
+    {
         title: 'Leads data analysis',
         description: 'Analysis of a data set of leads, presented in a nice and readable way',
         imageSrc: dataAnalysisImg,
         projectSrc: 'https://ricandres98.github.io/analisis-de-datos/'
-    }),
-    new Project({
+    },
+    {
         title: 'The Music Discoverer',
         description: 'This is a Single Page Application that uses a Spotify-like API to browse through its data and play track previews.',
         imageSrc: musicDiscovererImg,
         projectSrc: 'https://animated-squirrel-5f3b15.netlify.app/'
-    }),
-    new Project({
+    },
+    {
         title: 'Platzi Movies',
         description: 'SPA that connects to an API and provides information about movies. It has support for english and spanish',
         imageSrc:platziMoviesImg,
         projectSrc: 'https://soft-figolla-672dcd.netlify.app/'
-    }),
-    new Project({
+    },
+    {
         title: 'Calculator',
         description: 'Calculator made with pure JS vanilla',
         imageSrc: calculatorImg,
         projectSrc: 'https://ricandres98.github.io/Calculadora/'
-    }),
+    },
+    {
+        title: 'Toggle Panda',
+        description: 'A toggle function implemented along with a picture made 100% on CSS',
+        imageSrc: pandaCssImg,
+        projectSrc: 'https://codepen.io/ricandres98/full/VwrepRO'
+    },
 ];
 
 const contacts = [
