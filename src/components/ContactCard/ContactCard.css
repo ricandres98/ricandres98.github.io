@@ -1,0 +1,30 @@
+.ContactCard svg {
+    width: 32px;
+    margin-right: 20px;
+}
+a.ContactCard  {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--small);
+    color: var(--white);
+    font-weight: 600;
+}
+a.ContactCard svg{
+    /* transition: .3s transform cubic-bezier(0,50,1,-50); */
+}
+a.ContactCard:hover svg{
+    transform: rotate(1deg) scale(0.99);
+    transition: .5s transform cubic-bezier(0.5,50,.5,-50);
+}
+
+@media screen and (min-width: 600px) {
+    a.ContactCard {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: var(--medium);
+        color: var(--white);
+        font-weight: 600;
+    }
+}

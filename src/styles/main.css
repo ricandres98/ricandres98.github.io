@@ -1,0 +1,25 @@
+@import url('fonts.css');
+
+:root {
+    --main-font: 'Spline Sans Mono';
+    --bk-color: #6562E5;
+    --white: #FEFEFE;
+    --xx-large: 4.8rem;
+    --x-large: 3rem;
+    --large: 2.4rem;
+    --medium: 2rem;
+    --small: 1.8rem;
+    --x-small: 1.6rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--main-font);
+}
+section {
+    position: relative;
+}

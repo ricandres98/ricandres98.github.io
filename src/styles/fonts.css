@@ -1,60 +1,60 @@
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-Light.ttf');
+    src: url('../assets/fonts/SplineSansMono-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-LightItalic.ttf');
+    src: url('../assets/fonts/SplineSansMono-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-Regular.ttf');
+    src: url('../assets/fonts/SplineSansMono-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-Italic.ttf');
+    src: url('../assets/fonts/SplineSansMono-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-Medium.ttf');
+    src: url('../assets/fonts/SplineSansMono-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-MediumItalic.ttf');
+    src: url('../assets/fonts/SplineSansMono-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-SemiBold.ttf');
+    src: url('../assets/fonts/SplineSansMono-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-SemiBoldItalic.ttf');
+    src: url('../assets/fonts/SplineSansMono-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-Bold.ttf');
+    src: url('../assets/fonts/SplineSansMono-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Spline Sans Mono';
-    src: url('../assets/fonts/SplineSansMono-BoldItalic.ttf');
+    src: url('../assets/fonts/SplineSansMono-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }

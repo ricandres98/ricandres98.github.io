@@ -1,0 +1,40 @@
+/* Projects */
+.ProjectsList {
+    position: relative;
+    z-index: 1;
+    padding: 60px 40px;
+}
+.ProjectsList > h2 {
+    margin: 0 auto 70px;
+    font-size: var(--x-large);
+    color: var(--white);
+    text-align: center;
+} 
+
+/* Cards Container */
+.ProjectsList .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 50px;
+    justify-content: center;
+}
+
+@media screen and (min-width:600px) {
+    .ProjectsList {
+        position: relative;
+        z-index: 1;
+        padding: 60px 40px;
+    }
+    .ProjectsList > h2 {
+        margin: 0 auto 70px;
+        font-size: var(--xx-large);
+    } 
+}
+@media screen and (min-width:900px) {
+    .ProjectsList .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 290px);
+        gap: 50px;
+        justify-content: center;
+    }
+}
