@@ -6,8 +6,8 @@ const ContactInfo = (props) => {
         <section className="ContactInfo">
         <h2>Contact info:</h2>
         <ul>
-            {props.contacts.map(contact => (
-                <li>
+            {props.contacts.map((contact, index) => (
+                <li key={`contact-item-${index}`}>
                     {props.render(contact)}
                 </li>
             ))}

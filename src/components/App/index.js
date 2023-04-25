@@ -7,6 +7,7 @@ import { contacts, projects } from "../../services/data";
 import { ProjectCard } from "../ProjectCard";
 import "./App.css";
 import { ContactCard } from "../ContactCard";
+import './App.css';
 
 const App = () => {
   return (

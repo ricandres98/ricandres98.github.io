@@ -32,7 +32,9 @@
 .ProjectCard__content p {
     align-self: start;
     padding: 15px;
-    font-size: var(--x-small);
+    /* max-height: calc(100% - 30px); */
+    overflow-y: auto;
+    font-size: var(--xx-small);
     background-color: rgba(59, 82, 98, 0.9);
     border-radius: 5px;
 }
@@ -79,6 +81,7 @@
     }
     .ProjectCard__content p {
         display: none;
+        font-size: var(--x-small);
     }
     @media (prefers-reduced-motion: no-preference) {
         .ProjectCard__content p {

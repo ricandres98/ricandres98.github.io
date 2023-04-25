@@ -3,6 +3,7 @@
 :root {
     --main-font: 'Spline Sans Mono';
     --bk-color: #6562E5;
+    --react-blue: #65DCF6;
     --white: #FEFEFE;
     --xx-large: 4.8rem;
     --x-large: 3rem;
@@ -10,6 +11,7 @@
     --medium: 2rem;
     --small: 1.8rem;
     --x-small: 1.6rem;
+    --xx-small: 1.2rem;
 }
 * {
     margin: 0;
